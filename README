@@ -1,0 +1,28 @@
+TO RUN SERVER:
+mvn clean
+mvn compile
+
+TPC:
+mvn exec:java -Dexec.mainClass="BGUServer.TPCmain" -Dexec.args="<port>" 
+
+REACTOR:
+mvn exec:java -Dexec.mainClass="BGUServer.ReactorMain" -Dexec.args="<port> <num of threads>" 
+
+TO RUN CLIENT:
+make
+cd bin 
+BGSclient 0.0.0.0 7777
+
+we keep our filtered words in BGUnet class
+
+RUN EXAMPLES:
+
+REGISTER dan 123 10-10-1000
+LOGIN dan 123 1
+LOGOUT
+LOGSTAT
+STAT dan
+FOLLOW 0 dan
+POST is this the right way to get a 100 in this assignment?
+PM Teacher PLEASE GIVE US A 100 ITS LIFE OR DEATH
+BLOCK dan
